@@ -1,0 +1,13 @@
+﻿@model ShoppingCartViewModel
+
+
+@if (Model.ShoppingCart.ShoppingCartItems.Count > 0)
+{
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page">
+            <span class="fa fa-shopping-cart"></span> 
+            <span  id="cart-status">@Model.ShoppingCart.ShoppingCartItems.Count</span>            
+        </a>
+    </li>
+}
+

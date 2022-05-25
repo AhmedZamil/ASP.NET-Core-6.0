@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+@*     <link href="~/lib/font-awesome/css/fontawesome.css" rel="stylesheet" />*@
+    <link href="~/content/site.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/font-awesome/js/all.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+
+    @RenderSection("head",required:false)
+
+</head>
+<body> 
+        <nav class="navbar navbar-expand-lg bg-light navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Marielina's'</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-action="Index" asp-controller="Home" aria-current="page" >Home</a>
+                        </li>
+                        @await Component.InvokeAsync("CategoryMenu")
+                        @await Component.InvokeAsync("ShoppingCartSummary")
+                       <partial name="_LoginPartial" />
+@*                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>*@
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="lead">
+                    <img class="img-responsive" alt="Marielinas Pie Shop Logo" src="~/images/bethanylogo.png" />
+                </p>
+            </div>
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    @RenderSection("Scripts",required:false)
+</body>
+</html>

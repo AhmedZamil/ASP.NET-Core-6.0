@@ -1,0 +1,12 @@
+﻿@model PiesListViewModel
+
+    <div class="row">
+         <partial name="_Carousel" />
+    </div>
+
+ <div class="row">
+@foreach(var pie in Model.Pies)
+{
+    <partial name="_PieCard" model="pie"/>
+}
+ </div>
