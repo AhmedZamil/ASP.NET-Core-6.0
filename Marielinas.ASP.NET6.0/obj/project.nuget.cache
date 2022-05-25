@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZbikUGdoOvEMsUGlZkSuArVNhX7Lfdx9/yoA7pW3AEjTOgcpf4IP+w8eylL44mp74f+pv7eO6tpE5i1I46UHvA==",
+  "dgSpecHash": "wtqfO+E1c6+YHv2rJ/ydMkpHsNfxiQUCDv/xnElAuq046ABaMPmbJopRDdfvnj+l01fVTndJg1XDg3NmIP1RoQ==",
   "success": true,
-  "projectFilePath": "E:\\1.1WORKSHOP\\Practice Lab\\COMPLETE\\Marielinas.ASP.NET6.0\\Marielinas.ASP.NET6.0.csproj",
+  "projectFilePath": "E:\\1.1WORKSHOP\\Practice Lab\\MAY\\ASP.NET Core 6.0\\Marielinas.ASP.NET6.0\\Marielinas.ASP.NET6.0.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
